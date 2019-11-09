@@ -1,11 +1,11 @@
 import React from 'react';
-import auxi from '../../hoc/auxi';
+import Auxi from '../../hoc/auxi';
 import classes from './Layout.css';
 const Layout = (props)=>(
-    <auxi>
+    <Auxi>
             <div>Toolbar,sidedrawer,backdrop</div>
             <main className={classes.Content}>{props.children}</main>
-        </auxi>
+        </Auxi>
 )
 
 export default Layout;
