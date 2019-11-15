@@ -10,7 +10,6 @@ const Order=(props)=>{
             amount: props.ingredients[ingredientName]
         });
     }
-    console.log(ingredients);
     const outputIngredients= ingredients.map(obj=>{
         return <span style={{
                                 textTransform:'capitalize',
@@ -22,11 +21,10 @@ const Order=(props)=>{
                     key={obj.name}>{obj.name}({obj.amount})</span>
      
     });
-    console.log(outputIngredients);
     return(
         <div className={classes.Order}>
             <p>Ingredients:{outputIngredients}</p>
-            <p>Price: <strong>INR {Number.parseFloat(props.price.toFixed(2))}</strong></p>
+            <p>Price: <strong>INR {Number.parseFloat(props.price).toFixed(2)}</strong></p>
         </div>
     );
 }
