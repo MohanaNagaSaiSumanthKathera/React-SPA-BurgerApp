@@ -9,5 +9,6 @@ export {
     purchaseBurgerFail,
     purchaseBurgerStart,
     purchaseBurger,
-    purchaseInit
+    purchaseInit,
+    fetchOrders
 } from './order.js'
