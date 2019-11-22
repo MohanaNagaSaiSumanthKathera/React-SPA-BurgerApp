@@ -12,3 +12,10 @@ export {
     purchaseInit,
     fetchOrders
 } from './order.js'
+
+export {
+    auth,
+    authLogout,
+    setAuthRedirectPath,
+    authCheckState
+} from './auth';
